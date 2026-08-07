@@ -9,6 +9,7 @@ Este proyecto, utilizando tecnologías Spring Boot, HTML, JS, Thymeleaf, etc., v
 ## Desarrollo
 
 A través del desarrollo de este curso y con ayuda de GitHub, vamos a ir generando diferentes historias de usuario, así como reportes del proyecto, dando un historial y una medida de ayuda para la creación del mismo, durante el cual también se harán pruebas de ejemplo antes de ser lanzado realmente.
+<img width="1261" height="651" alt="image" src="https://github.com/user-attachments/assets/25609220-28cf-4571-b4ae-df0d64e1d62d" />
 
 ### Tecnologías Spring a utilizar
 - En la capa backend vamos a usar Spring Boot, un framework del proyecto para la lógica crud que a la vez se instalara con multiples dependencias en VScode 
@@ -23,7 +24,22 @@ Para la gestión y construcción del proyecto se aplicará Maven, ya que este cu
 </p>
 - Thymeleaf Se usará en la capa de vistas para el renderizado Del sistema spring
 - Para el control de versiones se usarán las herramientas de git y github, Ya sea el historial de cambios , generación de historias de usuario y reportes de proyecto, usada en un poryecto conjunto de todos los integrantes
-
+### Arquitectura base del sistema en vscode
+demo/
+├── .mvn/
+├── .vscode/
+├── src/
+│   ├── main/
+│   │   ├── java/co/edu/javeriana/demo/
+│   │   └── resources/
+│   └── test/
+├── target/
+├── .gitattributes
+├── .gitignore
+├── HELP.md
+├── mvnw
+├── mvnw.cmd
+└── pom.xml
 ## Características
 
 - **Multiempresa (multi-tenant):** cada organización tiene su propio espacio aislado; los procesos pertenecen a la empresa, no a usuarios individuales. Esto asegura que, a pesar de que todas estas están en una misma interfaz, cada empresa tenga su propio espacio personal, sin tener relación alguna con las otras, más allá de la implementación del sistema a realizar.
