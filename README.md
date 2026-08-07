@@ -9,10 +9,15 @@ Este proyecto, utilizando tecnologías Spring Boot, HTML, JS, Thymeleaf, etc., v
 ## Desarrollo
 
 A través del desarrollo de este curso y con ayuda de GitHub, vamos a ir generando diferentes historias de usuario, así como reportes del proyecto, dando un historial y una medida de ayuda para la creación del mismo, durante el cual también se harán pruebas de ejemplo antes de ser lanzado realmente.
-<img width="1261" height="651" alt="image" src="https://github.com/user-attachments/assets/25609220-28cf-4571-b4ae-df0d64e1d62d" />
+
+<p align="center">
+  <img width="1261" height="651" alt="Historial de historias de usuario" src="https://github.com/user-attachments/assets/25609220-28cf-4571-b4ae-df0d64e1d62d" />
+</p>
 
 ### Tecnologías Spring a utilizar
-- En la capa backend vamos a usar Spring Boot, un framework del proyecto para la lógica crud que a la vez se instalara con multiples dependencias en VScode 
+
+- En la capa backend vamos a usar Spring Boot, un framework del proyecto para la lógica CRUD, que a la vez se instalará con múltiples dependencias en VS Code.
+
 <p align="center">
   <img width="263" height="235" alt="Tecnologías Spring" src="https://github.com/user-attachments/assets/da1592f4-cc9d-4bac-abdd-3925ea5c6aa8" />
 </p>
@@ -22,9 +27,13 @@ Para la gestión y construcción del proyecto se aplicará Maven, ya que este cu
 <p align="center">
   <img width="294" height="739" alt="Estructura del proyecto en Maven" src="https://github.com/user-attachments/assets/538569ad-93c1-438a-8266-00527783e6a8" />
 </p>
-- Thymeleaf Se usará en la capa de vistas para el renderizado Del sistema spring
-- Para el control de versiones se usarán las herramientas de git y github, Ya sea el historial de cambios , generación de historias de usuario y reportes de proyecto, usada en un poryecto conjunto de todos los integrantes
-### Arquitectura base del sistema en vscode
+
+- Thymeleaf se usará en la capa de vistas para el renderizado del sistema Spring.
+- Para el control de versiones se usarán las herramientas de Git y GitHub, ya sea para el historial de cambios, generación de historias de usuario y reportes de proyecto, usadas en un proyecto conjunto de todos los integrantes.
+
+### Arquitectura base del sistema en VS Code
+
+```
 demo/
 ├── .mvn/
 ├── .vscode/
@@ -40,6 +49,8 @@ demo/
 ├── mvnw
 ├── mvnw.cmd
 └── pom.xml
+```
+
 ## Características
 
 - **Multiempresa (multi-tenant):** cada organización tiene su propio espacio aislado; los procesos pertenecen a la empresa, no a usuarios individuales. Esto asegura que, a pesar de que todas estas están en una misma interfaz, cada empresa tenga su propio espacio personal, sin tener relación alguna con las otras, más allá de la implementación del sistema a realizar.
@@ -51,16 +62,21 @@ demo/
 - **Editor visual de procesos** mediante actividades, arcos y gateways (exclusivos, paralelos e inclusivos).
 - **Roles funcionales** asociados a actividades, con validación de uso antes de eliminarlos.
 
-  ## Requerimentos
-- **Crud:** El sistema debe permitir crear Editar consultar y eliminar procesos de la organización
-- **Eliminacion logica:** El sistema debe permitir una eliminación lógica en vez de un borrado definitivo para conservar el historial De la acción tomada
-- **Seguridad:** Se debe contar con un sistema de autenticación seguro con control y acceso por empresa Así como por el rol coma tal como administrador , lector coma tipo empleado entre otros
-- **Usabilidad:** El sistema debe Ofrecer una interfaz común fácil de entender consistente y novedosa para cualquier tipo de empresa
-- **privacidad:** La eliminación lógica y el manejo del historial deben respetar los derechos de privacidad de la propia empresa y de cada usuario registrado en esta
+## Requerimientos
+
+- **CRUD:** el sistema debe permitir crear, editar, consultar y eliminar procesos de la organización.
+- **Eliminación lógica:** el sistema debe permitir una eliminación lógica en vez de un borrado definitivo, para conservar el historial de la acción tomada.
+- **Seguridad:** se debe contar con un sistema de autenticación seguro, con control y acceso por empresa, así como por el rol, tal como administrador, lector, tipo empleado, entre otros.
+- **Usabilidad:** el sistema debe ofrecer una interfaz común, fácil de entender, consistente y novedosa para cualquier tipo de empresa.
+- **Privacidad:** la eliminación lógica y el manejo del historial deben respetar los derechos de privacidad de la propia empresa y de cada usuario registrado en esta.
+
 ## Integrantes
-- **David Mannios** - rol de 
-- **Juan Pablo Peña** - rol de 
-- **Andres Diaz** - rol de
-- **Alejandro** - rol de 
-## Metodologia
-A lo largo del curso se va a ver la generación De un aproximado de 28 historias de usuario y reportes del proyecto Via Github Coma en esta misma vamos a incluir pruebas de ejemplo antes del lanzamiento del proyecto como tal
+
+- **David Mannios** — rol de _(pendiente)_
+- **Juan Pablo Peña** — rol de _(pendiente)_
+- **Andrés Díaz** — rol de _(pendiente)_
+- **Alejandro** — rol de _(pendiente)_
+
+## Metodología
+
+A lo largo del curso se va a ver la generación de un aproximado de 28 historias de usuario y reportes del proyecto vía GitHub, en la cual vamos a incluir pruebas de ejemplo antes del lanzamiento del proyecto como tal.
