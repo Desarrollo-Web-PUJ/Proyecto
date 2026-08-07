@@ -11,7 +11,7 @@ Este proyecto, utilizando tecnologías Spring Boot, HTML, JS, Thymeleaf, etc., v
 A través del desarrollo de este curso y con ayuda de GitHub, vamos a ir generando diferentes historias de usuario, así como reportes del proyecto, dando un historial y una medida de ayuda para la creación del mismo, durante el cual también se harán pruebas de ejemplo antes de ser lanzado realmente.
 
 ### Tecnologías Spring a utilizar
-
+- En la capa backend vamos a usar Spring Boot, un framework del proyecto para la lógica crud que a la vez se instalara con multiples dependencias en VScode 
 <p align="center">
   <img width="263" height="235" alt="Tecnologías Spring" src="https://github.com/user-attachments/assets/da1592f4-cc9d-4bac-abdd-3925ea5c6aa8" />
 </p>
@@ -21,6 +21,8 @@ Para la gestión y construcción del proyecto se aplicará Maven, ya que este cu
 <p align="center">
   <img width="294" height="739" alt="Estructura del proyecto en Maven" src="https://github.com/user-attachments/assets/538569ad-93c1-438a-8266-00527783e6a8" />
 </p>
+- Thymeleaf Se usará en la capa de vistas para el renderizado Del sistema spring
+- Para el control de versiones se usarán las herramientas de git y github, Ya sea el historial de cambios , generación de historias de usuario y reportes de proyecto, usada en un poryecto conjunto de todos los integrantes
 
 ## Características
 
@@ -32,3 +34,17 @@ Para la gestión y construcción del proyecto se aplicará Maven, ya que este cu
 - **Eliminación lógica** (estado inactivo) para no perder información histórica, respetando los derechos de privacidad de cada usuario, así como de la propia empresa.
 - **Editor visual de procesos** mediante actividades, arcos y gateways (exclusivos, paralelos e inclusivos).
 - **Roles funcionales** asociados a actividades, con validación de uso antes de eliminarlos.
+
+  ## Requerimentos
+- **Crud:** El sistema debe permitir crear Editar consultar y eliminar procesos de la organización
+- **Eliminacion logica:** El sistema debe permitir una eliminación lógica en vez de un borrado definitivo para conservar el historial De la acción tomada
+- **Seguridad:** Se debe contar con un sistema de autenticación seguro con control y acceso por empresa Así como por el rol coma tal como administrador , lector coma tipo empleado entre otros
+- **Usabilidad:** El sistema debe Ofrecer una interfaz común fácil de entender consistente y novedosa para cualquier tipo de empresa
+- **privacidad:** La eliminación lógica y el manejo del historial deben respetar los derechos de privacidad de la propia empresa y de cada usuario registrado en esta
+## Integrantes
+- **David Mannios** - rol de 
+- **Juan Pablo Peña** - rol de 
+- **Andres Diaz** - rol de
+- **Alejandro** - rol de 
+## Metodologia
+A lo largo del curso se va a ver la generación De un aproximado de 28 historias de usuario y reportes del proyecto Via Github Coma en esta misma vamos a incluir pruebas de ejemplo antes del lanzamiento del proyecto como tal
