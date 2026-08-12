@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistema de Gestión Multiempresa</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1f2328;
+    --muted: #57606a;
+    --border: #d0d7de;
+    --link: #0969da;
+    --code-bg: #f6f8fa;
+    --accent: #0969da;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f6f8fa;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .wrapper {
+    max-width: 860px;
+    margin: 40px auto;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 45px 60px;
+  }
+  h1 {
+    font-size: 2rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.3em;
+    margin-top: 0;
+  }
+  h2 {
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.3em;
+    margin-top: 1.8em;
+  }
+  h3 {
+    font-size: 1.2rem;
+    margin-top: 1.5em;
+  }
+  p { margin: 1em 0; }
+  ul { padding-left: 1.6em; }
+  li { margin: 0.4em 0; }
+  strong { color: var(--text); }
+  code, pre {
+    background: var(--code-bg);
+    border-radius: 6px;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  }
+  pre {
+    padding: 16px;
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    font-size: 0.85rem;
+  }
+  code { padding: 0.15em 0.4em; font-size: 0.85em; }
+  pre code { padding: 0; background: none; }
+  .team-list { list-style: none; padding: 0; }
+  .team-list li {
+    padding: 8px 12px;
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    margin-bottom: 6px;
+  }
+  .pending {
+    color: var(--muted);
+    font-style: italic;
+  }
+  .about-box {
+    margin-top: 2.5em;
+    padding-top: 1.5em;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <h1>Sistema de Gestión Multiempresa</h1>
+
+  <h2>Descripción</h2>
+  <p>
+    Con este proyecto organizado, vamos a desarrollar, a través del sistema CRUD, un sistema para la
+    gestión de múltiples empresas que les permita tener una interfaz común para el manejo de estas
+    mismas. Con este proyecto buscamos brindar procesos de mayor seguridad, confiabilidad y
+    optimización a cualquier tipo de empresa que desee sumarse a este plan.
+  </p>
+  <p>
+    Este proyecto, utilizando tecnologías Spring Boot, HTML, JS, Thymeleaf, etc., va a hacerse a
+    través del método de desarrollo CRUD (create, replace, update, delete), con el cual cualquier
+    empresa que decida sumarse a nuestra misión será capaz de gestionar cómo se crea, edita, consulta
+    y elimina dicha empresa. Además de esto, vamos a ofrecer un historial de todos los cambios, tanto
+    internos, ya sea personal o gestión interna, como externos, ya sea la trazabilidad o funciones del
+    proyecto, ofreciendo un sistema novedoso, consistente y de fácil uso y manejo.
+  </p>
+
+  <h2>Desarrollo</h2>
+  <p>
+    A través del desarrollo de este curso y con ayuda de GitHub, vamos a ir generando diferentes
+    historias de usuario, así como reportes del proyecto, dando un historial y una medida de ayuda
+    para la creación del mismo, durante el cual también se harán pruebas de ejemplo antes de ser
+    lanzado realmente.
+  </p>
+
+  <h3>Tecnologías Spring a utilizar</h3>
+  <ul>
+    <li>
+      En la capa backend vamos a usar <strong>Spring Boot</strong>, un framework del proyecto para la
+      lógica CRUD, que a la vez se instalará con múltiples dependencias en VS Code.
+    </li>
+  </ul>
+  <p>
+    Para la gestión y construcción del proyecto se aplicará <strong>Maven</strong>, ya que este cuenta
+    con un modelo de configuración más simple, aparte de estar basado en formato XML.
+  </p>
+  <ul>
+    <li><strong>Thymeleaf</strong> se usará en la capa de vistas para el renderizado del sistema Spring.</li>
+    <li>
+      Para el control de versiones se usarán las herramientas de <strong>Git</strong> y
+      <strong>GitHub</strong>, ya sea para el historial de cambios, generación de historias de usuario
+      y reportes de proyecto, usadas en un proyecto conjunto de todos los integrantes.
+    </li>
+  </ul>
+
+  <h3>Arquitectura base del sistema en VS Code</h3>
+  <pre><code>demo/
+├── .mvn/
+├── .vscode/
+├── src/
+│   ├── main/
+│   │   ├── java/co/edu/javeriana/demo/
+│   │   └── resources/
+│   └── test/
+├── target/
+├── .gitattributes
+├── .gitignore
+├── HELP.md
+├── mvnw
+├── mvnw.cmd
+└── pom.xml</code></pre>
+
+  <h2>Características</h2>
+  <ul>
+    <li>
+      <strong>Multiempresa (multi-tenant):</strong> cada organización tiene su propio espacio aislado;
+      los procesos pertenecen a la empresa, no a usuarios individuales. Esto asegura que, a pesar de
+      que todas estas están en una misma interfaz, cada empresa tenga su propio espacio personal, sin
+      tener relación alguna con las otras, más allá de la implementación del sistema a realizar.
+    </li>
+    <li>
+      <strong>Autenticación segura</strong> con control de acceso por empresa y roles (administrador,
+      editor, solo lectura). Esto se hace con el fin de que cada empresa pueda delegar criterio propio
+      de cómo se debe manejar esta internamente, ya que nosotros, como creadores, no buscamos tener
+      ninguna intervención directa en cómo la empresa gestiona sus propios procesos internos.
+    </li>
+    <li><strong>CRUD de procesos organizacionales:</strong> nombre, descripción, categoría y estado (borrador / publicado).</li>
+    <li><strong>Historial y trazabilidad</strong> de cada cambio realizado sobre un proceso.</li>
+    <li>
+      <strong>Búsquedas y filtros avanzados</strong> sobre procesos. Con esto buscaremos implementar un
+      sistema de filtrado para que la empresa pueda buscar con más facilidad el proceso, empleado,
+      trabajo o función que se ha de realizar.
+    </li>
+    <li>
+      <strong>Eliminación lógica</strong> (estado inactivo) para no perder información histórica,
+      respetando los derechos de privacidad de cada usuario, así como de la propia empresa.
+    </li>
+    <li><strong>Editor visual de procesos</strong> mediante actividades, arcos y gateways (exclusivos, paralelos e inclusivos).</li>
+    <li><strong>Roles funcionales</strong> asociados a actividades, con validación de uso antes de eliminarlos.</li>
+  </ul>
+
+  <h2>Requerimientos</h2>
+  <ul>
+    <li><strong>CRUD:</strong> el sistema debe permitir crear, editar, consultar y eliminar procesos de la organización.</li>
+    <li><strong>Eliminación lógica:</strong> el sistema debe permitir una eliminación lógica en vez de un borrado definitivo, para conservar el historial de la acción tomada.</li>
+    <li><strong>Seguridad:</strong> se debe contar con un sistema de autenticación seguro, con control y acceso por empresa, así como por el rol, tal como administrador, lector, tipo empleado, entre otros.</li>
+    <li><strong>Usabilidad:</strong> el sistema debe ofrecer una interfaz común, fácil de entender, consistente y novedosa para cualquier tipo de empresa.</li>
+    <li><strong>Privacidad:</strong> la eliminación lógica y el manejo del historial deben respetar los derechos de privacidad de la propia empresa y de cada usuario registrado en esta.</li>
+  </ul>
+
+  <h2>Integrantes</h2>
+  <ul class="team-list">
+    <li><strong>David Mannios</strong> — rol de <span class="pending">(pendiente)</span></li>
+    <li><strong>Juan Pablo Peña</strong> — rol de <span class="pending">(pendiente)</span></li>
+    <li><strong>Andrés Díaz</strong> — rol de <span class="pending">(pendiente)</span></li>
+    <li><strong>Alejandro</strong> — rol de <span class="pending">(pendiente)</span></li>
+  </ul>
+
+  <h2>Metodología</h2>
+  <p>
+    A lo largo del curso se va a ver la generación de un aproximado de 28 historias de usuario y
+    reportes del proyecto vía GitHub, en la cual vamos a incluir pruebas de ejemplo antes del
+    lanzamiento del proyecto como tal.
+  </p>
+
+  <div class="about-box">
+    Sistema multiempresa para modelar y gestionar procesos organizacionales: roles de acceso,
+    historial de cambios y editor visual con actividades, arcos y gateways.
+  </div>
+
+</div>
+</body>
+</html>
