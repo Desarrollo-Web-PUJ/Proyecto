@@ -53,7 +53,7 @@ public class DataLoader implements CommandLineRunner {
             "integrantes",
             "Integrantes",
             "Equipo del proyecto",
-            "David Mannios — rol pendiente por definir.\nJuan Pablo Peña — rol pendiente por definir.\nAndrés Díaz — rol pendiente por definir.\nAlejandro — rol pendiente por definir."
+            "David Mannios — QA / Diseñador.\nJuan Pablo Peña — Scrum Master / Management.\nAndrés Díaz — Configuration Manager / Databases.\nAlejandro López — DevOps / Developer."
         ));
 
         seccionRepository.save(new Seccion(
