@@ -72,11 +72,41 @@ demo/
 
 ## Integrantes
 
-- **David Mannios** — rol de _(pendiente)_
-- **Juan Pablo Peña** — rol de _(pendiente)_
-- **Andrés Díaz** — rol de _(pendiente)_
-- **Alejandro** — rol de _(pendiente)_
+- **David Mannios** — QA/Diseñador
+- **Juan Pablo Peña** — Scrum Master/Management
+- **Andrés Díaz** — Configuration Manager/Databases
+- **Alejandro** — DevOps/Developer
 
 ## Metodología
 
 A lo largo del curso se va a ver la generación de un aproximado de 28 historias de usuario y reportes del proyecto vía GitHub, en la cual vamos a incluir pruebas de ejemplo antes del lanzamiento del proyecto como tal.
+
+## Despliegue con Docker
+
+### Requisitos
+- Docker
+- Docker Compose
+
+### Construcción y ejecución
+
+Desde la raíz del proyecto:
+
+docker compose up -d --build
+
+### Verificar contenedor
+
+docker ps
+
+### Acceso a la aplicación
+
+La aplicación se encuentra disponible en:
+
+http://10.43.99.46:8080
+
+### Detener la aplicación
+
+docker compose down
+
+### Consultar logs
+
+docker compose logs -f
