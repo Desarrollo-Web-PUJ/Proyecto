@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head(${seccion.titulo})}"></head>
+<body>
+    <header th:replace="~{fragments/layout :: header}"></header>
+
+    <main class="container">
+        <aside class="sidebar">
+            <h3>Secciones</h3>
+            <ul>
+                <li th:each="s : ${secciones}">
+                    <a th:href="@{'/wiki/' + ${s.id}}"
+                       th:text="${s.titulo}"
+                       th:classappend="${s.id == seccion.id} ? 'activo' : ''">Sección</a>
+                </li>
+            </ul>
+        </aside>
+
+        <article class="contenido">
+            <h1 th:text="${seccion.titulo}">Título</h1>
+            <p th:if="${seccion.contenido != null and !seccion.contenido.isEmpty()}"
+               th:text="${seccion.contenido}">Contenido</p>
+            <p th:if="${seccion.contenido == null or seccion.contenido.isEmpty()}" class="sin-contenido">
+                Esta sección aún no tiene contenido disponible.
+            </p>
+        </article>
+    </main>
+
+    <footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>

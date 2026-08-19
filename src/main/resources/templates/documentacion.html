@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('Documentación')}"></head>
+<body>
+    <header th:replace="~{fragments/layout :: header}"></header>
+
+    <main class="container">
+        <h1>Documentación</h1>
+        <p>Selecciona una sección para ver su contenido detallado.</p>
+
+        <ul class="lista-secciones">
+            <li th:each="seccion : ${secciones}">
+                <a th:href="@{'/wiki/' + ${seccion.id}}" th:text="${seccion.titulo}">Sección</a>
+                <span th:text="${seccion.resumen}">Resumen</span>
+            </li>
+        </ul>
+    </main>
+
+    <footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head(titulo)">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${titulo} + ' · Taller Wiki'">Taller Wiki</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <header th:fragment="header">
+        <nav class="navbar">
+            <a th:href="@{/}" class="logo">Taller Wiki</a>
+            <ul class="nav-links">
+                <li><a th:href="@{/}">Inicio</a></li>
+                <li><a th:href="@{/wiki}">Documentación</a></li>
+                <li><a th:href="@{/contacto}">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <footer th:fragment="footer">
+        <p>&copy; 2026 Taller Wiki · Pontificia Universidad Javeriana</p>
+    </footer>
+</body>
+</html>
