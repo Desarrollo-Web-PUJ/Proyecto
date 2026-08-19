@@ -72,10 +72,10 @@ demo/
 
 ## Integrantes
 
-- **David Mannios** — rol de _(pendiente)_
-- **Juan Pablo Peña** — rol de _(pendiente)_
-- **Andrés Díaz** — rol de _(pendiente)_
-- **Alejandro** — rol de _(pendiente)_
+- **David Mannios** — QA/Diseñador
+- **Juan Pablo Peña** — Scrum Master/Management
+- **Andrés Díaz** — Configuration Manager/Databases
+- **Alejandro** — DevOps/Developer
 
 ## Metodología
 
