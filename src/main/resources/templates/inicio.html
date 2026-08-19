@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('Inicio')}"></head>
+<body>
+    <header th:replace="~{fragments/layout :: header}"></header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Taller Wiki</h1>
+            <p>Vamos a desarrollar, a través del sistema CRUD, un sistema para la gestión de múltiples empresas que les permita tener una interfaz común para el manejo de estas mismas, brindando procesos de mayor seguridad, confiabilidad y optimización.</p>
+            <a th:href="@{/wiki}" class="btn">Ver documentación</a>
+        </section>
+
+        <section class="cards">
+            <a th:each="seccion : ${secciones}"
+               th:href="@{'/wiki/' + ${seccion.id}}"
+               class="card">
+                <h2 th:text="${seccion.titulo}">Título</h2>
+                <p th:text="${seccion.resumen}">Resumen</p>
+            </a>
+        </section>
+    </main>
+
+    <footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>

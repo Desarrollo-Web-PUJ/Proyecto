@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('Contáctenos')}"></head>
+<body>
+    <header th:replace="~{fragments/layout :: header}"></header>
+
+    <main class="container">
+        <h1>Contáctenos</h1>
+        <form id="form-contacto" novalidate>
+            <div class="campo">
+                <label for="nombre">Nombre completo *</label>
+                <input type="text" id="nombre" name="nombre" required minlength="3">
+                <span class="error" id="error-nombre"></span>
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo electrónico *</label>
+                <input type="email" id="correo" name="correo" required>
+                <span class="error" id="error-correo"></span>
+            </div>
+
+            <div class="campo">
+                <label for="telefono">Teléfono *</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                <span class="error" id="error-telefono"></span>
+            </div>
+
+            <div class="campo">
+                <label for="asunto">Asunto *</label>
+                <select id="asunto" name="asunto" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="soporte">Soporte técnico</option>
+                    <option value="consulta">Consulta general</option>
+                    <option value="sugerencia">Sugerencia</option>
+                </select>
+                <span class="error" id="error-asunto"></span>
+            </div>
+
+            <div class="campo">
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje" name="mensaje" rows="5" minlength="20" maxlength="400" required></textarea>
+                <span class="contador" id="contador-mensaje">Faltan 20 caracteres</span>
+                <span class="error" id="error-mensaje"></span>
+            </div>
+
+            <button type="submit" id="btn-enviar">Enviar mensaje</button>
+            <p id="confirmacion" class="confirmacion" hidden>Formulario válido, listo para enviar.</p>
+        </form>
+    </main>
+
+    <footer th:replace="~{fragments/layout :: footer}"></footer>
+
+    <script th:src="@{/js/validacion.js}"></script>
+</body>
+</html>
